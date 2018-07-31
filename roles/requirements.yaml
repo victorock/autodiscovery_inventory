@@ -1,0 +1,29 @@
+- name: ansible-network.network-engine
+  src: https://github.com/ansible-network/network-engine.git
+  scm: git
+  version: devel
+
+- name: ansible-network.arista_eos
+  src: https://github.com/ansible-network/arista_eos.git
+  scm: git
+  version: devel
+
+- name: ansible-network.cisco_nxos
+  src: https://github.com/ansible-network/cisco_nxos.git
+  scm: git
+  version: devel
+
+- name: ansible-network.cisco_ios
+  src: https://github.com/ansible-network/cisco_ios.git
+  scm: git
+  version: devel
+
+- name: victorock.network_discovery
+  src: https://github.com/victorock/network_discovery.git
+  scm: git
+  version: dev
+
+- name: victorock.network_inventory
+  src: https://github.com/victorock/network_inventory.git
+  scm: git
+  version: dev
