@@ -1,0 +1,4 @@
+#
+# Ansible managed
+#
+ansible_network_os: nxos

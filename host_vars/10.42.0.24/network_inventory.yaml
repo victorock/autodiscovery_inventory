@@ -1,0 +1,95 @@
+#
+# Ansible managed
+#
+cisco_nxos:
+    capabilities:
+        network_os: nxos
+        network_os_hostname: switch
+        network_os_image: bootflash:///nxos.7.0.3.I7.4.bin
+        network_os_model: Nexus9000 9000v
+        network_os_platform: N9K-9000v
+        network_os_version: 7.0(3)I7(4)
+    system:
+        hostname: switch
+        resources:
+            cpu:
+                idle:
+                    unit: '%'
+                    value: '95.00'
+                kernel:
+                    unit: '%'
+                    value: '4.00'
+                user:
+                    unit: '%'
+                    value: '1.00'
+                value: 1.00% user,   4.00% kernel,   95.00% idle
+            load:
+                15min: '0.91'
+                1min: '0.76'
+                5min: '0.93'
+                value: '1 minute: 0.76   5 minutes: 0.93   15 minutes: 0.91'
+            memory:
+                free:
+                    unit: K
+                    value: 4373484
+                total:
+                    unit: K
+                    value: 8134228
+                used:
+                    unit: K
+                    value: 3760744
+                value: 8134228K total,   3760744K used,   4373484K free
+            processes:
+                running: 4
+                total: 546
+                value: 546 total, 4 running
+        uptime:
+            kernel:
+                days: 0
+                hours: 0
+                minutes: 12
+                seconds: 51
+                value: 0 days, 0 hours, 12 minutes, 51 seconds
+            system:
+                days: 0
+                hours: 0
+                minutes: 10
+                seconds: 41
+                value: 0 days, 0 hours, 10 minutes, 41 seconds
+    version:
+        hardware:
+            bootflash_size:
+                unit: kB
+                value: 3509454
+            chassis: Nexus9000 9000v
+            cpu: Intel Core Processor (Haswell, no TSX)
+            memory_size:
+                unit: kB
+                value: 8134228
+            serial_number: 9QH6S2I8JER
+        header: |-
+            Cisco Nexus Operating System (NX-OS) Software
+            TAC support: http://www.cisco.com/tac
+            Documents: http://www.cisco.com/en/US/products/ps9372/tsd_products_support_series_home.html
+            Copyright (c) 2002-2018, Cisco Systems, Inc. All rights reserved.
+            The copyrights to certain works contained herein are owned by
+            other third parties and are used and distributed under license.
+            Some parts of this software are covered under the GNU Public
+            License. A copy of the license is available at
+            http://www.gnu.org/licenses/gpl.html.
+        software:
+            bios:
+                version: null
+            kickstart:
+                file: bootflash:///nxos.7.0.3.I7.4.bin
+                version: 7.0(3)I7(4)
+            system:
+                file: bootflash:///nxos.7.0.3.I7.4.bin
+                version: 7.0(3)I7(4)
+net_gather_subset:
+- default
+net_hostname: switch
+net_image: null
+net_model: Nexus9000 9000v
+net_serialnum: 9QH6S2I8JER
+net_version: null
