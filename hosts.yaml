@@ -3,25 +3,25 @@
 #
 all:
   hosts:
-    leaf04:
-      ansible_host: "leaf04"
-    leaf02:
-      ansible_host: "leaf02"
     leaf03:
-      ansible_host: "leaf03"
+      ansible_host: "10.42.0.23"
+    leaf02:
+      ansible_host: "10.42.0.22"
     leaf01:
-      ansible_host: "leaf01"
+      ansible_host: "10.42.0.21"
+    leaf04:
+      ansible_host: "10.42.0.24"
     spine02:
-      ansible_host: "spine02"
+      ansible_host: "10.42.0.12"
     spine01:
-      ansible_host: "spine01"
+      ansible_host: "10.42.0.11"
   children:
     nxos:
       hosts:
-        leaf04:
-        leaf02:
         leaf03:
+        leaf02:
         leaf01:
+        leaf04:
         spine02:
         spine01:
 
