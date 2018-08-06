@@ -18,30 +18,30 @@ ansible_facts:
                 cpu:
                     idle:
                         unit: '%'
-                        value: '67.00'
+                        value: '89.00'
                     kernel:
                         unit: '%'
-                        value: '30.00'
+                        value: '9.50'
                     user:
                         unit: '%'
-                        value: '3.00'
-                    value: 3.00% user,   30.00% kernel,   67.00% idle
+                        value: '1.50'
+                    value: 1.50% user,   9.50% kernel,   89.00% idle
                 load:
-                    15min: '0.67'
-                    1min: '0.33'
-                    5min: '0.55'
-                    value: '1 minute: 0.33   5 minutes: 0.55   15 minutes: 0.67'
+                    15min: '0.66'
+                    1min: '0.49'
+                    5min: '0.64'
+                    value: '1 minute: 0.49   5 minutes: 0.64   15 minutes: 0.66'
                 memory:
                     free:
                         unit: K
-                        value: 4313640
+                        value: 4311236
                     total:
                         unit: K
                         value: 8134228
                     used:
                         unit: K
-                        value: 3820588
-                    value: 8134228K total,   3820588K used,   4313640K free
+                        value: 3822992
+                    value: 8134228K total,   3822992K used,   4311236K free
                 processes:
                     running: 1
                     total: 546
@@ -50,15 +50,15 @@ ansible_facts:
                 kernel:
                     days: 0
                     hours: 3
-                    minutes: 20
-                    seconds: 20
-                    value: 0 days, 3 hours, 20 minutes, 20 seconds
+                    minutes: 49
+                    seconds: 7
+                    value: 0 days, 3 hours, 49 minutes, 7 seconds
                 system:
                     days: 0
                     hours: 3
-                    minutes: 18
-                    seconds: 10
-                    value: 0 days, 3 hours, 18 minutes, 10 seconds
+                    minutes: 46
+                    seconds: 57
+                    value: 0 days, 3 hours, 46 minutes, 57 seconds
         version:
             hardware:
                 bootflash_size:
@@ -134,30 +134,30 @@ cisco_nxos:
             cpu:
                 idle:
                     unit: '%'
-                    value: '67.00'
+                    value: '89.00'
                 kernel:
                     unit: '%'
-                    value: '30.00'
+                    value: '9.50'
                 user:
                     unit: '%'
-                    value: '3.00'
-                value: 3.00% user,   30.00% kernel,   67.00% idle
+                    value: '1.50'
+                value: 1.50% user,   9.50% kernel,   89.00% idle
             load:
-                15min: '0.67'
-                1min: '0.33'
-                5min: '0.55'
-                value: '1 minute: 0.33   5 minutes: 0.55   15 minutes: 0.67'
+                15min: '0.66'
+                1min: '0.49'
+                5min: '0.64'
+                value: '1 minute: 0.49   5 minutes: 0.64   15 minutes: 0.66'
             memory:
                 free:
                     unit: K
-                    value: 4313640
+                    value: 4311236
                 total:
                     unit: K
                     value: 8134228
                 used:
                     unit: K
-                    value: 3820588
-                value: 8134228K total,   3820588K used,   4313640K free
+                    value: 3822992
+                value: 8134228K total,   3822992K used,   4311236K free
             processes:
                 running: 1
                 total: 546
@@ -166,15 +166,15 @@ cisco_nxos:
             kernel:
                 days: 0
                 hours: 3
-                minutes: 20
-                seconds: 20
-                value: 0 days, 3 hours, 20 minutes, 20 seconds
+                minutes: 49
+                seconds: 7
+                value: 0 days, 3 hours, 49 minutes, 7 seconds
             system:
                 days: 0
                 hours: 3
-                minutes: 18
-                seconds: 10
-                value: 0 days, 3 hours, 18 minutes, 10 seconds
+                minutes: 46
+                seconds: 57
+                value: 0 days, 3 hours, 46 minutes, 57 seconds
     version:
         hardware:
             bootflash_size:
@@ -726,5 +726,5 @@ nxos_functions:
 - get_facts
 - get_config
 - noop
-omit: __omit_place_holder__90bf38b4536db45cbbde7705a8f434bf7ab4d39a
+omit: __omit_place_holder__c648436090ac78b4cffa37343be3ea1f99a85617
 playbook_dir: /home/jdacosta/autodiscovery_inventory
