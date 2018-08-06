@@ -4,16 +4,22 @@
 all:
   hosts:
     10.42.0.23:
+      ansible_host: "10.42.0.23"
       groups: "nxos"
     10.42.0.22:
+      ansible_host: "10.42.0.22"
       groups: "nxos"
     10.42.0.21:
+      ansible_host: "10.42.0.21"
       groups: "nxos"
     10.42.0.24:
+      ansible_host: "10.42.0.24"
       groups: "nxos"
     10.42.0.12:
+      ansible_host: "10.42.0.12"
       groups: "nxos"
     10.42.0.11:
+      ansible_host: "10.42.0.11"
       groups: "nxos"
   children:
     nxos:
@@ -24,4 +30,3 @@ all:
         10.42.0.24:
         10.42.0.12:
         10.42.0.11:
-
