@@ -1612,9 +1612,9 @@ cisco_nxos:
                     trunk_allowed_vlans: null
                     trunk_allowed_vlans_add: null
             Ethernet1/2:
-                description: null
+                description: Underlay by Ansible
                 duplex: null
-                enabled: true
+                enabled: false
                 flowcontrol:
                     receive: null
                     send: null
@@ -1646,7 +1646,7 @@ cisco_nxos:
                     unicast_level: null
                 switchport:
                     access_vlan: null
-                    enabled: true
+                    enabled: false
                     mode: null
                     native_vlan: null
                     trunk_allowed_vlans: null
@@ -2052,9 +2052,9 @@ cisco_nxos:
                     trunk_allowed_vlans: null
                     trunk_allowed_vlans_add: null
             Ethernet1/3:
-                description: null
+                description: Underlay by Ansible
                 duplex: null
-                enabled: true
+                enabled: false
                 flowcontrol:
                     receive: null
                     send: null
@@ -2086,7 +2086,7 @@ cisco_nxos:
                     unicast_level: null
                 switchport:
                     access_vlan: null
-                    enabled: true
+                    enabled: false
                     mode: null
                     native_vlan: null
                     trunk_allowed_vlans: null
@@ -2492,9 +2492,9 @@ cisco_nxos:
                     trunk_allowed_vlans: null
                     trunk_allowed_vlans_add: null
             Ethernet1/4:
-                description: null
+                description: Underlay by Ansible
                 duplex: null
-                enabled: true
+                enabled: false
                 flowcontrol:
                     receive: null
                     send: null
@@ -2526,7 +2526,7 @@ cisco_nxos:
                     unicast_level: null
                 switchport:
                     access_vlan: null
-                    enabled: true
+                    enabled: false
                     mode: null
                     native_vlan: null
                     trunk_allowed_vlans: null
@@ -2932,9 +2932,9 @@ cisco_nxos:
                     trunk_allowed_vlans: null
                     trunk_allowed_vlans_add: null
             Ethernet1/5:
-                description: null
+                description: Underlay by Ansible
                 duplex: null
-                enabled: true
+                enabled: false
                 flowcontrol:
                     receive: null
                     send: null
@@ -2966,7 +2966,7 @@ cisco_nxos:
                     unicast_level: null
                 switchport:
                     access_vlan: null
-                    enabled: true
+                    enabled: false
                     mode: null
                     native_vlan: null
                     trunk_allowed_vlans: null
@@ -5108,6 +5108,86 @@ cisco_nxos:
                     transmit: null
                 mtu: null
                 name: Ethernet1/99
+                negotiate: null
+                priority_flow_control:
+                    mode: null
+                    watch_dog_interval: null
+                spanning_tree:
+                    bpdufilter: null
+                    bpduguard: null
+                    cost: null
+                    link_type: null
+                    port_priority: null
+                    port_type: null
+                speed: null
+                storm_control:
+                    broadcast_level: null
+                    multicast_level: null
+                    unicast_level: null
+                switchport:
+                    access_vlan: null
+                    enabled: true
+                    mode: null
+                    native_vlan: null
+                    trunk_allowed_vlans: null
+                    trunk_allowed_vlans_add: null
+            loopback0:
+                description: Underlay by Ansible
+                duplex: null
+                enabled: true
+                flowcontrol:
+                    receive: null
+                    send: null
+                ipv4:
+                    address: 172.16.0.11
+                    dhcp: true
+                    netmask: 32
+                lldp:
+                    dcbx_version: null
+                    receive: null
+                    transmit: null
+                mtu: null
+                name: loopback0
+                negotiate: null
+                priority_flow_control:
+                    mode: null
+                    watch_dog_interval: null
+                spanning_tree:
+                    bpdufilter: null
+                    bpduguard: null
+                    cost: null
+                    link_type: null
+                    port_priority: null
+                    port_type: null
+                speed: null
+                storm_control:
+                    broadcast_level: null
+                    multicast_level: null
+                    unicast_level: null
+                switchport:
+                    access_vlan: null
+                    enabled: true
+                    mode: null
+                    native_vlan: null
+                    trunk_allowed_vlans: null
+                    trunk_allowed_vlans_add: null
+            loopback1:
+                description: Underlay by Ansible
+                duplex: null
+                enabled: true
+                flowcontrol:
+                    receive: null
+                    send: null
+                ipv4:
+                    address: 192.168.0.254
+                    dhcp: true
+                    netmask: 32
+                lldp:
+                    dcbx_version: null
+                    receive: null
+                    transmit: null
+                mtu: null
+                name: loopback1
                 negotiate: null
                 priority_flow_control:
                     mode: null
