@@ -5186,3 +5186,9 @@ cisco_nxos:
                 vlan_id: 1
                 vlan_name: null
                 vlan_state: null
+            10:
+                mapped_vni: null
+                mode: null
+                vlan_id: 10
+                vlan_name: null
+                vlan_state: null
