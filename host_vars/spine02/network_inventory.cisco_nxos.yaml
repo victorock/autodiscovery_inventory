@@ -4,7 +4,7 @@
 cisco_nxos:
     capabilities:
         network_os: nxos
-        network_os_hostname: switch
+        network_os_hostname: spine02
         network_os_image: bootflash:///nxos.7.0.3.I7.4.bin
         network_os_model: Nexus9000 9000v
         network_os_platform: N9K-9000v
@@ -5257,7 +5257,7 @@ cisco_nxos:
                 source_interface: null
                 vrf: null
             domain_name: null
-            hostname: null
+            hostname: spine02
             name_servers: []
         vlan:
             1:
