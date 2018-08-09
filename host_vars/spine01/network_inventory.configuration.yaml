@@ -3,7 +3,7 @@
 #
 configuration: |-
     !Command: show running-config
-    !Time: Thu Aug  9 16:23:51 2018
+    !Time: Thu Aug  9 17:41:33 2018
 
     version 7.0(3)I7(4)
     hostname spine01
@@ -37,7 +37,11 @@ configuration: |-
     rmon event 4 description WARNING(4) owner PMON@WARNING
     rmon event 5 description INFORMATION(5) owner PMON@INFO
 
+    ip pim rp-address 192.168.0.254 group-list 224.0.0.0/4
+    ip pim bsr rp-candidate loopback1 group-list 224.0.0.0/4
     ip pim ssm range 232.0.0.0/8
+    ip pim anycast-rp 192.168.0.254 172.16.0.11
+    ip pim anycast-rp 192.168.0.254 172.16.0.12
     vlan 1
 
     vrf context management
@@ -76,6 +80,7 @@ configuration: |-
       ip unnumbered loopback0
       ip ospf cost 1
       ip router ospf UNDERLAY_0 area 0.0.0.1
+      ip pim sparse-mode
       no shutdown
 
     interface Ethernet1/5
@@ -86,6 +91,7 @@ configuration: |-
       ip unnumbered loopback0
       ip ospf cost 1
       ip router ospf UNDERLAY_0 area 0.0.0.1
+      ip pim sparse-mode
       no shutdown
 
     interface Ethernet1/6
@@ -355,10 +361,12 @@ configuration: |-
     line vty
     boot nxos bootflash:/nxos.7.0.3.I7.4.bin
     router ospf UNDERLAY_0
+      area 0.0.0.1 nssa
     router bgp 65001
       router-id 172.16.0.11
       address-family ipv4 unicast
       address-family l2vpn evpn
+        retain route-target all
       neighbor 172.16.0.21
         remote-as 65001
         update-source loopback0

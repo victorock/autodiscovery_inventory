@@ -1612,9 +1612,9 @@ cisco_nxos:
                     trunk_allowed_vlans: null
                     trunk_allowed_vlans_add: null
             Ethernet1/2:
-                description: null
+                description: Underlay by Ansible
                 duplex: null
-                enabled: true
+                enabled: false
                 flowcontrol:
                     receive: null
                     send: null
@@ -1646,7 +1646,7 @@ cisco_nxos:
                     unicast_level: null
                 switchport:
                     access_vlan: null
-                    enabled: true
+                    enabled: false
                     mode: null
                     native_vlan: null
                     trunk_allowed_vlans: null
@@ -2052,9 +2052,9 @@ cisco_nxos:
                     trunk_allowed_vlans: null
                     trunk_allowed_vlans_add: null
             Ethernet1/3:
-                description: null
+                description: Underlay by Ansible
                 duplex: null
-                enabled: true
+                enabled: false
                 flowcontrol:
                     receive: null
                     send: null
@@ -2086,7 +2086,7 @@ cisco_nxos:
                     unicast_level: null
                 switchport:
                     access_vlan: null
-                    enabled: true
+                    enabled: false
                     mode: null
                     native_vlan: null
                     trunk_allowed_vlans: null
@@ -5132,6 +5132,166 @@ cisco_nxos:
                     native_vlan: null
                     trunk_allowed_vlans: null
                     trunk_allowed_vlans_add: null
+            Vlan1:
+                description: null
+                duplex: null
+                enabled: true
+                flowcontrol:
+                    receive: null
+                    send: null
+                ipv4:
+                    address: null
+                    dhcp: true
+                    netmask: null
+                lldp:
+                    dcbx_version: null
+                    receive: null
+                    transmit: null
+                mtu: null
+                name: Vlan1
+                negotiate: null
+                priority_flow_control:
+                    mode: null
+                    watch_dog_interval: null
+                spanning_tree:
+                    bpdufilter: null
+                    bpduguard: null
+                    cost: null
+                    link_type: null
+                    port_priority: null
+                    port_type: null
+                speed: null
+                storm_control:
+                    broadcast_level: null
+                    multicast_level: null
+                    unicast_level: null
+                switchport:
+                    access_vlan: null
+                    enabled: true
+                    mode: null
+                    native_vlan: null
+                    trunk_allowed_vlans: null
+                    trunk_allowed_vlans_add: null
+            Vlan1150:
+                description: null
+                duplex: null
+                enabled: false
+                flowcontrol:
+                    receive: null
+                    send: null
+                ipv4:
+                    address: 10.1.150.1
+                    dhcp: true
+                    netmask: 24
+                lldp:
+                    dcbx_version: null
+                    receive: null
+                    transmit: null
+                mtu: null
+                name: Vlan1150
+                negotiate: null
+                priority_flow_control:
+                    mode: null
+                    watch_dog_interval: null
+                spanning_tree:
+                    bpdufilter: null
+                    bpduguard: null
+                    cost: null
+                    link_type: null
+                    port_priority: null
+                    port_type: null
+                speed: null
+                storm_control:
+                    broadcast_level: null
+                    multicast_level: null
+                    unicast_level: null
+                switchport:
+                    access_vlan: null
+                    enabled: true
+                    mode: null
+                    native_vlan: null
+                    trunk_allowed_vlans: null
+                    trunk_allowed_vlans_add: null
+            Vlan150:
+                description: null
+                duplex: null
+                enabled: false
+                flowcontrol:
+                    receive: null
+                    send: null
+                ipv4:
+                    address: null
+                    dhcp: true
+                    netmask: null
+                lldp:
+                    dcbx_version: null
+                    receive: null
+                    transmit: null
+                mtu: null
+                name: Vlan150
+                negotiate: null
+                priority_flow_control:
+                    mode: null
+                    watch_dog_interval: null
+                spanning_tree:
+                    bpdufilter: null
+                    bpduguard: null
+                    cost: null
+                    link_type: null
+                    port_priority: null
+                    port_type: null
+                speed: null
+                storm_control:
+                    broadcast_level: null
+                    multicast_level: null
+                    unicast_level: null
+                switchport:
+                    access_vlan: null
+                    enabled: true
+                    mode: null
+                    native_vlan: null
+                    trunk_allowed_vlans: null
+                    trunk_allowed_vlans_add: null
+            loopback0:
+                description: Underlay by Ansible
+                duplex: null
+                enabled: true
+                flowcontrol:
+                    receive: null
+                    send: null
+                ipv4:
+                    address: 172.16.0.21
+                    dhcp: true
+                    netmask: 32
+                lldp:
+                    dcbx_version: null
+                    receive: null
+                    transmit: null
+                mtu: null
+                name: loopback0
+                negotiate: null
+                priority_flow_control:
+                    mode: null
+                    watch_dog_interval: null
+                spanning_tree:
+                    bpdufilter: null
+                    bpduguard: null
+                    cost: null
+                    link_type: null
+                    port_priority: null
+                    port_type: null
+                speed: null
+                storm_control:
+                    broadcast_level: null
+                    multicast_level: null
+                    unicast_level: null
+                switchport:
+                    access_vlan: null
+                    enabled: true
+                    mode: null
+                    native_vlan: null
+                    trunk_allowed_vlans: null
+                    trunk_allowed_vlans_add: null
             mgmt0:
                 description: null
                 duplex: null
@@ -5149,6 +5309,46 @@ cisco_nxos:
                     transmit: null
                 mtu: null
                 name: mgmt0
+                negotiate: null
+                priority_flow_control:
+                    mode: null
+                    watch_dog_interval: null
+                spanning_tree:
+                    bpdufilter: null
+                    bpduguard: null
+                    cost: null
+                    link_type: null
+                    port_priority: null
+                    port_type: null
+                speed: null
+                storm_control:
+                    broadcast_level: null
+                    multicast_level: null
+                    unicast_level: null
+                switchport:
+                    access_vlan: null
+                    enabled: true
+                    mode: null
+                    native_vlan: null
+                    trunk_allowed_vlans: null
+                    trunk_allowed_vlans_add: null
+            nve1:
+                description: Overlay by Ansible
+                duplex: null
+                enabled: false
+                flowcontrol:
+                    receive: null
+                    send: null
+                ipv4:
+                    address: null
+                    dhcp: true
+                    netmask: null
+                lldp:
+                    dcbx_version: null
+                    receive: null
+                    transmit: null
+                mtu: null
+                name: nve1
                 negotiate: null
                 priority_flow_control:
                     mode: null
