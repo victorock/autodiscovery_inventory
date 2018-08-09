@@ -2525,7 +2525,7 @@ cisco_nxos:
                     multicast_level: null
                     unicast_level: null
                 switchport:
-                    access_vlan: null
+                    access_vlan: 1150
                     enabled: true
                     mode: null
                     native_vlan: null
@@ -2967,9 +2967,10 @@ cisco_nxos:
                 switchport:
                     access_vlan: null
                     enabled: true
-                    mode: null
+                    mode: trunk
                     native_vlan: null
-                    trunk_allowed_vlans: null
+                    trunk_allowed_vlans:
+                    - 100-104
                     trunk_allowed_vlans_add: null
             Ethernet1/50:
                 description: null
@@ -5171,6 +5172,47 @@ cisco_nxos:
                     native_vlan: null
                     trunk_allowed_vlans: null
                     trunk_allowed_vlans_add: null
+            port-channel15:
+                description: null
+                duplex: null
+                enabled: true
+                flowcontrol:
+                    receive: null
+                    send: null
+                ipv4:
+                    address: null
+                    dhcp: true
+                    netmask: null
+                lldp:
+                    dcbx_version: null
+                    receive: null
+                    transmit: null
+                mtu: null
+                name: port-channel15
+                negotiate: null
+                priority_flow_control:
+                    mode: null
+                    watch_dog_interval: null
+                spanning_tree:
+                    bpdufilter: null
+                    bpduguard: null
+                    cost: null
+                    link_type: null
+                    port_priority: null
+                    port_type: null
+                speed: null
+                storm_control:
+                    broadcast_level: null
+                    multicast_level: null
+                    unicast_level: null
+                switchport:
+                    access_vlan: null
+                    enabled: true
+                    mode: trunk
+                    native_vlan: null
+                    trunk_allowed_vlans:
+                    - 100-104
+                    trunk_allowed_vlans_add: null
         system:
             domain_lookup:
                 enabled: false
@@ -5179,10 +5221,3 @@ cisco_nxos:
             domain_name: null
             hostname: leaf02
             name_servers: []
-        vlan:
-            1:
-                mapped_vni: null
-                mode: null
-                vlan_id: 1
-                vlan_name: null
-                vlan_state: null

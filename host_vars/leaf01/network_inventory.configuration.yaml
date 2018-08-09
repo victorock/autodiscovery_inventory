@@ -3,7 +3,7 @@
 #
 configuration: |-
     !Command: show running-config
-    !Time: Thu Aug  9 00:28:48 2018
+    !Time: Thu Aug  9 15:59:07 2018
 
     version 7.0(3)I7(4)
     hostname leaf01
@@ -15,6 +15,11 @@ configuration: |-
       limit-resource u6route-mem minimum 96 maximum 96
       limit-resource m4route-mem minimum 58 maximum 58
       limit-resource m6route-mem minimum 8 maximum 8
+
+    cfs eth distribute
+    feature lacp
+    feature vpc
+    feature lldp
 
     no password strength-check
     username admin password 5 $5$MAGLGA$def0Ezy83V3Ao/3tgNI5BgdsbG0wmWMLGMW7wCP2t61  role network-admin
@@ -29,11 +34,30 @@ configuration: |-
     rmon event 4 description WARNING(4) owner PMON@WARNING
     rmon event 5 description INFORMATION(5) owner PMON@INFO
 
-    vlan 1
+    vlan 1,100-105,1150
+    vlan 100
+      name pod01
+    vlan 101
+      name app01
+    vlan 102
+      name app02
+    vlan 103
+      name app03
+    vlan 104
+      name app04
+    vlan 105
+      name app05
+    vlan 1150
+      name vni101150
 
     vrf context management
       ip route 0.0.0.0/0 10.0.2.2
       ip route 0.0.0.0/0 10.42.0.1
+
+    interface port-channel15
+      switchport mode trunk
+      switchport trunk native vlan 100
+      switchport trunk allowed vlan 100-104
 
     interface Ethernet1/1
 
@@ -42,8 +66,13 @@ configuration: |-
     interface Ethernet1/3
 
     interface Ethernet1/4
+      switchport access vlan 1150
 
     interface Ethernet1/5
+      switchport mode trunk
+      switchport trunk native vlan 100
+      switchport trunk allowed vlan 100-104
+      channel-group 15 mode active
 
     interface Ethernet1/6
 

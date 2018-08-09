@@ -3,7 +3,7 @@
 #
 configuration: |-
     !Command: show running-config
-    !Time: Thu Aug  9 00:28:48 2018
+    !Time: Thu Aug  9 15:59:06 2018
 
     version 7.0(3)I7(4)
     hostname leaf04
@@ -29,7 +29,7 @@ configuration: |-
     rmon event 4 description WARNING(4) owner PMON@WARNING
     rmon event 5 description INFORMATION(5) owner PMON@INFO
 
-    vlan 1
+    vlan 1,10-11
 
     vrf context management
       ip route 0.0.0.0/0 10.0.2.2
