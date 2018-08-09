@@ -27,3 +27,8 @@
   src: https://github.com/victorock/network_inventory.git
   scm: git
   version: dev
+
+- name: victorock.net_config
+  src: https://github.com/victorock/ansible-role-net_config.git
+  scm: git
+  version: master
