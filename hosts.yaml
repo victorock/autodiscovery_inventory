@@ -11,7 +11,7 @@ all:
       ansible_host: "10.42.0.21"
     leaf04:
       ansible_host: "10.42.0.24"
-    switch:
+    spine02:
       ansible_host: "10.42.0.12"
     spine01:
       ansible_host: "10.42.0.11"
@@ -22,6 +22,6 @@ all:
         leaf02:
         leaf01:
         leaf04:
-        switch:
+        spine02:
         spine01:
 

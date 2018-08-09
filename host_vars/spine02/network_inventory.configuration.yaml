@@ -3,10 +3,11 @@
 #
 configuration: |-
     !Command: show running-config
-    !Time: Thu Aug  9 17:41:33 2018
+    !Time: Thu Aug  9 18:00:57 2018
 
     version 7.0(3)I7(4)
-    vdc switch id 1
+    hostname spine02
+    vdc spine02 id 1
       limit-resource vlan minimum 16 maximum 4094
       limit-resource vrf minimum 2 maximum 4096
       limit-resource port-channel minimum 0 maximum 511
@@ -14,6 +15,7 @@ configuration: |-
       limit-resource u6route-mem minimum 96 maximum 96
       limit-resource m4route-mem minimum 58 maximum 58
       limit-resource m6route-mem minimum 8 maximum 8
+
     nv overlay evpn
     feature ospf
     feature bgp
